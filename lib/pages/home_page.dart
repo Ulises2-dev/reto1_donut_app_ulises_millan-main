@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
           //Tap bar
           TabBar(tabs: myTabs),
           //Tap bar view
-          const Expanded(child: TabBarView(children: [
+          Expanded(child: TabBarView(children: [
             //Donut tab
             DonutTab(),
             //Burger tab
