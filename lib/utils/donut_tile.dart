@@ -79,7 +79,7 @@ class DonutTile extends StatelessWidget {
                     textAlign: TextAlign.center,
                   ),
                 ),
-                const SizedBox(height: 8), // Espacio entre los textos
+                const SizedBox(height: 4), // Espacio entre los textos
                 // Texto adicional "Dunkin's"
                 const Text(
                   "Dunkin's",
@@ -88,6 +88,36 @@ class DonutTile extends StatelessWidget {
                     color: Colors.black,
                   ),
                   textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 10), // Espacio entre texto y botones
+
+                // Row con botón de favorito y "+" icono
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 40),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      // Botón de favorito (corazón)
+                      IconButton(
+                        onPressed: () {
+                          // Acción del botón de favorito
+                        },
+                        icon: const Icon(Icons.favorite_border),
+                        color: Colors.pink[400],
+                      ),
+                      // Ícono "+"
+                      GestureDetector(
+                        onTap: () {
+                          // Acción del botón "+"
+                        },
+                        child: Icon(
+                          Icons.add, // Ícono de "+"
+                          size: 30, // Tamaño del ícono
+                          color: Colors.grey[800],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
